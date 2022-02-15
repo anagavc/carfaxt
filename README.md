@@ -1,4 +1,3 @@
-# carfaxt
 # Carfaxt
 `Carfaxt is my first attempt at building a  MERN Stack web application for a car rental firm,it was built with the objective of helping the car rental firm upload cars that are available for rental in specific locations with relevant information such as  the cost of rental per hour,description and model of the car,the fuel type and the number of passengers the car can take.After a user must have selected a car of their choice in their location they can then procced to make payment for the car by creating an account with the details, the car is delivered to their location where they then fill in the neccessary paperwork`
 ## Demo
