@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# Carfaxt
+`Carfaxt is my first attempt at building a  MERN Stack web application for a car rental firm,it was built with the objective of helping the car rental firm upload cars that are available for rental in specific locations with relevant information such as  the cost of rental per hour,description and model of the car,the fuel type and the number of passengers the car can take.After a user must have selected a car of their choice in their location they can then procced to make payment for the car by creating an account with the details, the car is delivered to their location where they then fill in the neccessary paperwork`
+## Demo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+`The link to the live website:`
 
-## Available Scripts
+https://carfaxt.netlify.app
+## Tech Stack
 
-In the project directory, you can run:
+**Client:** React, Redux, TailwindCSS,Json Web Token,Animate On Scroll
 
-### `npm start`
+**Server:** Node, Express,Mongo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Features
 
-### `npm test`
+- Tailwind CSS
+- React Frontend
+- Authentication using JWT
+- Admin & User Login system
+- Image upload using Filebase-64
+- Node Backend
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Make sure you have node installed and then proceed to execute this command in the terminal
 
-### `npm run eject`
+```bash
+  npm i
+```
+    
+## Environment Variables
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Create an account on mongodb.com and create a new cluster, then set the env value of:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```javascript
+CONNECTION_URL = to the name of yout atlas database
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+For management of the sessions, set an env variable
 
-## Learn More
+```javascript
+AUTH_SECRET = any_secret_key_of_your_choice
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Usage/Examples
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+`For a car rental firm to upload their available rentals and meet with prospective clients from around the country`
+## Screenshots
+`The Hero Section`
 
-### Analyzing the Bundle Size
+![Hero Section](https://i2.paste.pics/G1DT5.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+`The Services Section`
+![Gallery Section](https://i2.paste.pics/G1DTY.png)
 
-### Making a Progressive Web App
+`The Login Page`
+![Admin Panel](https://i2.paste.pics/G1DVH.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+`The 404 Page`
+![Admin Panel](https://i2.paste.pics/G1E36.png)
 
-### Advanced Configuration
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Contributions are highly appreciated!
 
-### Deployment
+`Kindly send a pull request and I will review them with immediate effect`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
