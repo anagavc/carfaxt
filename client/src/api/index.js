@@ -1,6 +1,6 @@
 import axios from "axios";
-const server = "https://carfaxt.herokuapp.com";
-const API = axios.create({ baseUrl: "https://carfaxt.herokuapp.com" });
+const server = "https://carfaxt-backend.onrender.com/";
+const API = axios.create({ baseUrl: "https://carfaxt-backend.onrender.com/" });
 API.interceptors.request.use((req) => {
   if (localStorage.getItem("profile")) {
     req.headers.Authorization = `Bearer ${

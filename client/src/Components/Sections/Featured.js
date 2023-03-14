@@ -18,7 +18,7 @@ const Featured = (props) => {
   const navigationNextRef = React.useRef(null);
   const dispatch = useDispatch();
   const { rentals } = useSelector((state) => state.rentals);
-  const [cars, setCars] = useState(rentals);
+  const [cars, setCars] = useState([]);
   useEffect(() => {
     dispatch(getRentals());
   }, [dispatch]);
@@ -81,23 +81,39 @@ const Featured = (props) => {
             },
           }}
         >
-          {cars.map((rental) => {
-            return (
-              <SwiperSlide key={rental._id}>
-                <FeaturedItem
-                  image={rental.image}
-                  name={rental.carName}
-                  year={rental.carYear}
-                  cost={rental.cost}
-                  description={rental.description}
-                  passengers={rental.passengers}
-                  location={rental.location}
-                  id={rental._id}
-                  fuelType={rental.fuelType}
-                />
-              </SwiperSlide>
-            );
-          })}
+          {cars.length === 0
+            ? rentals.map((rental) => {
+                return (
+                  <SwiperSlide key={rental._id}>
+                    <FeaturedItem
+                      image={rental.image}
+                      name={rental.carName}
+                      year={rental.carYear}
+                      cost={rental.cost}
+                      description={rental.description}
+                      passengers={rental.passengers}
+                      location={rental.location}
+                      id={rental._id}
+                      fuelType={rental.fuelType}
+                    />
+                  </SwiperSlide>
+                );
+              })
+            : cars.map((rental) => (
+                <SwiperSlide key={rental._id}>
+                  <FeaturedItem
+                    image={rental.image}
+                    name={rental.carName}
+                    year={rental.carYear}
+                    cost={rental.cost}
+                    description={rental.description}
+                    passengers={rental.passengers}
+                    location={rental.location}
+                    id={rental._id}
+                    fuelType={rental.fuelType}
+                  />
+                </SwiperSlide>
+              ))}
         </Swiper>
       </div>
       <div className="flex justify-between space-x-6">
